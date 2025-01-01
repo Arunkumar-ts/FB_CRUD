@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+    font-weight: 400;
+}
+body{
+    padding:20px;
+}
+h3{
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 15px 0;
+    color: tomato;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+form{
+    width:300px;
+    margin:auto
+}
+form .form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+form .form-group label{
+    font-weight: 500px;
+}
+form .form-group input{
+    font-size:16px;
+    padding:5px 10px;
+    border: none;
+    outline: none;
+    background: #f1f1f1;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+form button{
+    padding: 5px 20px;
+    display: flex;
+    gap:5px;
+    font-size: 15px;
+    align-items: center;
+    border: none;
+    color: #fff;
+    background:tomato;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+}
+form button:active{
+    color: tomato;
+    background:#fff;
+}
+table{
+    border: 1px solid #ccc;
+    border-collapse:collapse;
+    min-width: 600px;
+    margin-top: 20px;
+}
+table thead th{
+    background: tomato;
+    color:white;
+    border: 1px solid tomato;
+}
+table td, table th{
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+table td button{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 2px 10px;
+    margin: 0 auto;
+    display: block;
+    background-color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn-delete{
+    color:red;
+}
+.btn-delete ion-icon,
+.btn-edit ion-icon{
+    pointer-events: none;
+}
+.popup{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color:rgba(155, 154, 154, 0.9);
+}
+.popup .popup-delete, .popup-alert{
+    background: tomato;
+    color:white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: end;
+}
+.popup button{
+    padding: 5px;
+    margin-top: 20px;
+    width:70px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid white;
+    background: tomato;
+    font-weight: 600;
+    color:white;
+}
+.popup button:active{
+    background: white;
+    color:tomato;
+}
+.popup .popup-close{
+    font-size: 25px;
+    font-weight: 800;
+    color:#fff;
+    cursor: pointer;
+}

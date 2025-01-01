@@ -80,7 +80,7 @@ table td, table th{
     border: 1px solid #ccc;
     padding: 5px 10px;
     max-width: 100px;
-    overflow-x: scroll;
+    overflow-wrap:break-word;
 }
 table td button{
     border: none;

@@ -53,6 +53,7 @@ form button{
     background:tomato;
     border-radius: 5px;
     cursor: pointer;
+    outline: none;
     margin: auto;
 }
 form button:active{
@@ -65,16 +66,29 @@ table{
     min-width: 600px;
 }
 .table-div{
-    overflow-y: scroll;
-    max-height:250px;
+    max-height:240px;
     margin-top: 20px;
     max-width: 600px;
-
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-bottom: 2px solid tomato;
+    position: relative;
+}
+thead{
+    position: sticky;
+    top:-1px;
+    z-index: 1;
+}
+.table-div::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+.table-div::-webkit-scrollbar-thumb {
+    background:tomato;
 }
 table thead th{
     background: tomato;
     color:white;
-    border: 1px solid tomato;
 }
 table td, table th{
     border: 1px solid #ccc;

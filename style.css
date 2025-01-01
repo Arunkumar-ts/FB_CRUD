@@ -7,8 +7,10 @@
     font-family: "Inter", serif;
     font-weight: 400;
 }
-body{
+.container{
     padding:20px;
+    width: 100vw;
+    height: 100vh;
 }
 h3{
     text-align: center;
@@ -130,4 +132,13 @@ table td button{
     font-weight: 800;
     color:#fff;
     cursor: pointer;
+}
+@media screen and (max-width:420px) {
+    .table-div{
+        width: 100vw;
+        overflow-x: scroll;
+    }
+    .container{
+        overflow: hidden;
+    }
 }

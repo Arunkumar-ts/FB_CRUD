@@ -7,47 +7,51 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h3>Student Details</h3>
-    <form action="#" id="frm">
-        <input type="hidden" id="id">
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Full Name">
-        </div>
-        <div class="form-group">
-            <label for="age">Age</label>
-            <input type="text" id="age" placeholder="Age">
-        </div>
-        <div class="form-group">
-            <label for="city">City</label>
-            <input type="text" id="city" placeholder="City">
-        </div>
-        <button type="submit" class="btn">
-            <ion-icon name="bookmark-outline"></ion-icon>SAVE
-        </button>
-    </form>
-    <center>
-        <table>
-            <thead>
-                <th>S.No</th>
-                <th>Name</th>
-                <th>Age</th>
-                <th>City</th>
-                <th>Edit</th>
-                <th>Delete</th>
-            </thead>
-            <tbody id="tblBody"></tbody>
-        </table>
-    </center>
-    <div class="popup">
-        <div class="popup-delete">
-            <p class="popup-close" onclick="popupClose()"><ion-icon name="close-outline"></ion-icon></p>
-            <h2>Are you sure to delete!</h2>
-            <button id="delete-conf">OK</button>
-        </div>
-        <div class="popup-alert">
-            <h2>Please fill all details!</h2>
-            <button id="alert">OK</button>
+    <div class=container>
+        <h3>Student Details</h3>
+        <form action="#" id="frm">
+            <input type="hidden" id="id">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="text" id="age" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="City">
+            </div>
+            <button type="submit" class="btn">
+                <ion-icon name="bookmark-outline"></ion-icon>SAVE
+            </button>
+        </form>
+        <center>
+           <div class="table-div">
+            <table>
+                <thead>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tblBody"></tbody>
+            </table>
+           </div>
+        </center>
+        <div class="popup">
+            <div class="popup-delete">
+                <p class="popup-close" onclick="popupClose()"><ion-icon name="close-outline"></ion-icon></p>
+                <h2>Are you sure to delete!</h2>
+                <button id="delete-conf">OK</button>
+            </div>
+            <div class="popup-alert">
+                <h2>Please fill all details!</h2>
+                <button id="alert">OK</button>
+            </div>
         </div>
     </div>
 </body>

@@ -63,7 +63,13 @@ table{
     border: 1px solid #ccc;
     border-collapse:collapse;
     min-width: 600px;
+}
+.table-div{
+    overflow-y: scroll;
+    max-height:250px;
     margin-top: 20px;
+    max-width: 600px;
+
 }
 table thead th{
     background: tomato;
@@ -73,6 +79,8 @@ table thead th{
 table td, table th{
     border: 1px solid #ccc;
     padding: 5px 10px;
+    max-width: 100px;
+    overflow-x: scroll;
 }
 table td button{
     border: none;
@@ -136,6 +144,7 @@ table td button{
 @media screen and (max-width:450px) {
     .table-div{
         width: 90vw;
+        max-height:400px;
         overflow-x: scroll;
     }
     .container{

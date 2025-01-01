@@ -133,7 +133,7 @@ table td button{
     color:#fff;
     cursor: pointer;
 }
-@media screen and (max-width:420px) {
+@media screen and (max-width:450px) {
     .table-div{
         width: 90vw;
         overflow-x: scroll;
